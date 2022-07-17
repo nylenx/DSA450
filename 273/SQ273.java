@@ -10,7 +10,7 @@ class Stack{
         else{
             System.out.println("Stack: ");
             for(int i=TOP;i>=0;i--){
-            System.out.println("|"+array[i]+"|");
+                System.out.println("|"+array[i]+"|");
             }
         }
     }
@@ -19,7 +19,6 @@ class Stack{
         else{
             array[++TOP]=el;
             System.out.println("Pushed "+el);
-
         }
     }
     public void pop(){
