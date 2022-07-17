@@ -1,11 +1,11 @@
 import java.util.*;
 
 class Stack{
-    static int MAX = 99999;
-    static int TOP = -1;
-    static String array[] = new String[MAX];
+    int MAX = 99999;
+    int TOP = -1;
+    String array[] = new String[MAX];
 
-    public static void display( ){
+    public void display( ){
         if(TOP==-1){System.out.println("Stack is EMPTY");}
         else{
             System.out.println("Stack: ");
@@ -14,7 +14,7 @@ class Stack{
             }
         }
     }
-    public static void push(String el){
+    public void push(String el){
         if(TOP == 99999){System.out.println("Stack Overflow");}
         else{
             array[++TOP]=el;
@@ -22,7 +22,7 @@ class Stack{
 
         }
     }
-    public static void pop( ){
+    public void pop(){
         if(TOP == -1){System.out.println("Stack Underflow");}
         else{
             System.out.println("Popped "+array[TOP]);
@@ -34,15 +34,16 @@ class Stack{
 class SQ273{
     public static void main(String args[]){
         System.out.println("Hello World");
-        Stack.push("5");
-        Stack.push("2");
-        Stack.push("6");
-        Stack.display();
-        Stack.pop();
-        Stack.display();
-        Stack.push("3");
-        Stack.display();
-        Stack.pop();
-        Stack.display();
+        Stack stack1 = new Stack();
+        stack1.push("5");
+        stack1.push("2");
+        stack1.push("6");
+        stack1.display();
+        stack1.pop();
+        stack1.display();
+        stack1.push("3");
+        stack1.display();
+        stack1.pop();
+        stack1.display();
     }
 }
