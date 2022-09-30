@@ -32,7 +32,7 @@ class Stack{
 
 class SQ273{
     public static void main(String args[]){
-        System.out.println("Hello World");
+
         Stack stack1 = new Stack();
         stack1.push("5");
         stack1.push("2");
